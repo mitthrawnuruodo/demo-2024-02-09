@@ -16,7 +16,11 @@ async function collectCards() {
             return favourites.includes(id);
         });
         console.log("Filtered Collection:", filtered);
-        listData (filtered, outElement);
+        if (filtered.length > 0) { 
+            listData (filtered, outElement);
+        } else {
+            outElement.innerHTML = `You have no favourites, click on a few hearts to add them...`;
+        }
     } catch (error) {
         console.error(error.message);
         outElement.innerHTML = `Could not fetch data...`;
