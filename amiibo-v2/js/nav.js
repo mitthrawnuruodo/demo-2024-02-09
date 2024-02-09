@@ -11,6 +11,7 @@ function makeMenu(nav) {
     <ul>
         <li><a href="amiibo-select.html">Amiibo Selector</a></li>
         <li><a href="amiibo-filter.html">Amiibo Filter Search</a></li>
+        <li><a href="amiibo-favourites.html">Amiibo Favourites</a></li>
     </ul>`;
     nav.innerHTML = links;
 }
