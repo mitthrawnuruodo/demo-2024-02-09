@@ -4,7 +4,6 @@ console.log("favourites:", favourites);
 const outElement = document.getElementById("container");
 
 async function collectCards() {
-
     try {
         const api = `https://www.amiiboapi.com/api/amiibo/`;
         const response = await fetch(api);

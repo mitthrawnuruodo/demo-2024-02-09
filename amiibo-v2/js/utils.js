@@ -8,6 +8,7 @@ if (!storageFavourites) {
 } else {
     favourites = JSON.parse(storageFavourites); // Get the array
 }
+console.log(favourites);
 
 export function listData(list, out){
     //console.log ("List:", list);
